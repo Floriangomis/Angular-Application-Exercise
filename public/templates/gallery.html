@@ -1,0 +1,37 @@
+<h1 class="title"> Gallery {{ id }} </h1>
+
+<div class="spinner" ng-show="processing">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+</div>
+
+<div ng-show="processing" class="loading-text">
+     Loading ...
+</div>
+
+<div class="filter" ng-show="!processing">
+    <input ng-model="searchText"> Filter </label>    
+</div>
+
+<modal title="{{titleOfPicture}}" url="{{pictureToShow}}" visible="showModal"></modal>
+
+<div class="container-picture">
+    <div ng-repeat="(index, value) in filteredPicturesData | filter:searchText">
+        <div ng-click="clickOnThumbnailPicture( value.title, value.url )" class='picture' style="background-image: url({{ value.thumbnailUrl }});">
+        </div>
+        <p class="title-picture">
+            {{value.title}}
+        </p>
+    </div>
+</div>
+
+<pagination ng-show="!processing"
+  ng-model="currentPage"
+  total-items="pictures.length"
+  max-size="maxSize"  
+  boundary-links="true"
+  style="margin-left: 40%">
+</pagination>

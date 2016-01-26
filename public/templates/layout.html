@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Picture Reader </title>
+        <base href="/">
+
+        <link rel="stylesheet" type="text/css" href="stylesheets/css/main.css">
+    </head>
+    <body ng-app="appFront">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Picture Reader</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div ng-view></div>
+
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+        <script src="../bower_components/angular-route/angular-route.js"></script>
+        <!-- endbower -->
+        <script src="js/min/angularApp.js"></script>
+        <script data-require="ui-bootstrap@*" data-semver="0.12.1" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>
+
+    </body>
+</html>

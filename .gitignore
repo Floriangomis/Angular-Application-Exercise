@@ -1,0 +1,14 @@
+node_modules
+bower_components
+
+*.DS_Store
+
+*.css.map
+.sass-cache
+
+nodemon.json
+
+public/js/min/
+public/assets/stylesheets/css
+
+npm-debug.log
