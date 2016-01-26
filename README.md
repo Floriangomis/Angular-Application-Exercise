@@ -11,6 +11,10 @@ Then :
 
 After that simply type : 
 
+`grunt start`
+ 
+ and then :
+ 
 `node Server/server.js`
 
 and you should visualize the application at this address :
