@@ -7,7 +7,6 @@ module.controller( 'homeController', [ '$scope', 'pictRetriever', 'pictSort', 'm
 function HomeConstructor( $scope, pictRetriever, pictSort, modelData, configObject ){
 
     $scope.name = 'homeCtrl';
-    $scope.searchText = '';
     $scope.picturesData = [];
     $scope.filteredPicturesData = [];
     
